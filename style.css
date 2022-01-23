@@ -18,8 +18,15 @@
   font-family: sans-serif;
   color: #DF8A0D;
 }
-.generalText:hover{
+
+.generalbuttonText{
+  text-decoration:none;
+  font-family: sans-serif;
+  color: #DF8A0D;
+}
+.generalbuttonText:hover{
   font-family: sans-serif;
   color: #c47a0c;
   background-color: #373e44;
 }
+
