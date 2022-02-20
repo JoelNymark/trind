@@ -1,3 +1,10 @@
+@font-face { font-family: CaflischScriptPro-Bold; src: url('CaflischScriptPro-Bold.otf'); } 
+
+body{
+  font-family: CaflischScriptPro-Bold;
+  font-family: CaflischScriptPro-Bold, sans-serif; 
+}
+
 .background-black{
   background-color: black;
 }
@@ -21,11 +28,15 @@
 
 .generalbuttonText{
   text-decoration:none;
-  font-family: sans-serif;
+  font-family: CaflischScriptPro-Bold;              /*maybe */
+  font-family: CaflischScriptPro-Bold, sans-serif;  /*maybe */
+  font-size: 50px;                                  /*maybe */
   color: #DF8A0D;
 }
-.generalbuttonText:hover{
-  font-family: sans-serif;
+.generalbuttonText:hover{  
+  font-family: CaflischScriptPro-Bold;              /*maybe */
+  font-family: CaflischScriptPro-Bold, sans-serif;  /*maybe */
+  font-size: 50px;                                  /*maybe */
   color: #c47a0c;
   background-color: #373e44;
 }
