@@ -1,9 +1,31 @@
 @font-face { font-family: CaflischScriptPro-Bold; src: url('CaflischScriptPro-Bold.otf'); } 
 
 body{
+  margin: 0; padding: 0; 
   font-family: CaflischScriptPro-Bold;
   font-family: CaflischScriptPro-Bold, sans-serif; 
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#212529; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DF8A0D; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c47a0c; 
+}
+
 
 .background-black{
   background-color: black;
@@ -21,8 +43,10 @@ body{
   text-decoration:none
 }
 
-.generalText{
-  font-family: sans-serif;
+.generalText{  
+  font-family: CaflischScriptPro-Bold;              /*maybe */
+  font-family: CaflischScriptPro-Bold, sans-serif;
+  font-size: 1.5rem;
   color: #DF8A0D;
 }
 
@@ -41,8 +65,13 @@ body{
   background-color: #373e44;
 }
 
-
 .btn-gold{
   background-color: #DF8A0D;
 }
 
+.mapContainer{
+  z-index: 10000000;
+  height: 200px;
+  width: 200px;
+  background-color: azure;
+}
