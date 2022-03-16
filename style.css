@@ -167,3 +167,7 @@ body{
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.background-light{
+  background-color: white;
+}
