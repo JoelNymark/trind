@@ -1,5 +1,18 @@
  @font-face { font-family: CaflischScriptPro-Bold; src: url('CaflischScriptPro-Bold.otf'); } 
 
+
+/* All Colors For The Site */
+:root{
+  --Gold:#DF8A0D;
+  --HoverGold:#c47a0c;
+  --Black:black;
+  --DarkGray:#28292b;
+  --DarkerGray:#212529;
+
+}
+
+
+
 body{
   margin: 0; padding: 0; 
   font-family: CaflischScriptPro-Bold;
@@ -18,28 +31,28 @@ body{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #DF8A0D; 
+  background: var(--Gold); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c47a0c; 
+  background: var(--HoverGold); 
 }
 
 
 .background-black{
-  background-color: black;
+  background-color: var(--Black);
 }
 
 .mail{
   font-family: sans-serif;
-  color: #DF8A0D;
+  color: var(--Gold);
   text-decoration:none
 }
 
 .mail:hover{
   font-family: sans-serif;
-  color: #c47a0c;
+  color: var(--HoverGold);
   text-decoration:none
 }
 
@@ -47,7 +60,7 @@ body{
   font-family: CaflischScriptPro-Bold;              /*maybe */
   font-family: CaflischScriptPro-Bold, sans-serif;
   font-size: 1.5rem;
-  color: #DF8A0D;
+  color: var(--Gold);
 }
 
 .generalbuttonText{
@@ -55,25 +68,37 @@ body{
   font-family: CaflischScriptPro-Bold;              /*maybe */
   font-family: CaflischScriptPro-Bold, sans-serif;  /*maybe */
   font-size: 50px;                                  /*maybe */
-  color: #DF8A0D;
+  color: var(--Gold);
 }
 .generalbuttonText:hover{  
   font-family: CaflischScriptPro-Bold;              /*maybe */
   font-family: CaflischScriptPro-Bold, sans-serif;  /*maybe */
   font-size: 50px;                                  /*maybe */
-  color: #c47a0c;
-  background-color: #373e44;
+  color: var(--HoverGold);
+  background-color: var(--DarkGray);
+}
+
+.logo-text-big{
+  font-size: 300px;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  justify-content: center;
+  color: var(--Gold);
+}
+.logo-text-big:hover{
+  color: var(--HoverGold);
 }
 
 .btn-gold{
-  background-color: #DF8A0D;
+  background-color: var(--Gold);
 }
 
 .mapContainer{
   z-index: 10000000;
   height: 200px;
   width: 200px;
-  background-color: azure;
+  display: block;
 }
 
 #gallery{
@@ -150,7 +175,7 @@ body{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #DF8A0D;
+  background-color: var(--Gold);
 }
 
 .container1:hover .overlay {
@@ -165,6 +190,10 @@ body{
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.dark-bg{
+  background-color: var(--DarkGray);
 }
 
 
