@@ -209,16 +209,19 @@
 
     <link rel="stylesheet" href="style.css">
     <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibXl0aGljYWx3aW50ZXIiLCJhIjoiY2t6dmQ1eXd2MDF2YjJubnU0dndreXlncSJ9.0MrTHv0a-A9JSoYgceHt6w';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-
+        mapboxgl.accessToken = 'pk.eyJ1IjoibXl0aGljYWx3aW50ZXIiLCJhIjoiY2t6dmQ1eXd2MDF2YjJubnU0dndreXlncSJ9.0MrTHv0a-A9JSoYgceHt6w';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [17.875592712053653, 59.623533595854944], // starting position [lng, lat]
+        //add marker to cords above.
+        zoom: 15 // starting zoom
+        });
+        const marker = new mapboxgl.Marker({"color" : "#DF8A0D"})
+        .setLngLat([17.875592712053653, 59.623533595854944])
+        .addTo(map);
 
     </script>
-
-    
 </body>
 
 </html>
