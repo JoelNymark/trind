@@ -24,10 +24,6 @@
 
   <!--NAVIGATION-->
   <nav class="navbar navbar-expand-lg  bg-dark">
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
     <div class="container d-flex justify-content-center">
       <div class="row">
         <div class="col-md-12 col-sm-8 d-flex justify-content-center">
@@ -206,6 +202,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script>
+      window.onload = function(){ 
         mapboxgl.accessToken = 'pk.eyJ1IjoibXl0aGljYWx3aW50ZXIiLCJhIjoiY2t6dmQ1eXd2MDF2YjJubnU0dndreXlncSJ9.0MrTHv0a-A9JSoYgceHt6w';
         var map = new mapboxgl.Map({
         container: 'map',
@@ -217,6 +214,7 @@
         const marker = new mapboxgl.Marker({"color" : "#DF8A0D"})
         .setLngLat([17.875592712053653, 59.623533595854944])
         .addTo(map);
+      };
 
     </script>
 </body>
