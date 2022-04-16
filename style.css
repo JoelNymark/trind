@@ -436,7 +436,7 @@ body{
 
 .cardContainer .jobCard .face.face2{
   position: relative;
-  background: #fff;
+  background: var(--DarkerGray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,6 +453,11 @@ body{
 .cardContainer .jobCard .face.face2 .content p{
   margin: 0;
   padding: 0;
+  color: var(--Gold);
+}
+
+.cardContainer .jobCard .face.face2 .content h3{
+  color: var(--Gold);
 }
 
 .cardContainer .jobCard .face.face2 .content a{
@@ -460,7 +465,7 @@ body{
   display:  inline-block;
   text-decoration: none;
   font-weight: 900;
-  color: #333;
+  color: var(--Gold);
   padding: 5px;
   border: 1px solid var(--Gold);
 }
