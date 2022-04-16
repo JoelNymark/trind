@@ -446,7 +446,6 @@ body{
   transform: translateY(-250px);
 }
 
-
 .cardContainer .jobCard:hover .face.face2{
   transform: translateY(0);
 }
