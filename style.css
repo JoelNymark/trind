@@ -3,7 +3,7 @@
 /* All Colors For The Site */
 :root{
   --Gold:#DF890F;
-  --HoverGold:#c47a0c;
+  --HoverGold:#b47009;
   --Black:black;
   --DarkGray:#28292b;
   --DarkerGray:#212529;
@@ -23,7 +23,7 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#212529; 
+  background:var(--DarkerGray); 
 }
  
 /* Handle */
@@ -74,6 +74,17 @@ body{
   color: var(--HoverGold);
   background-color: var(--DarkGray);
 }
+
+
+.phonenumber{
+  font-size: 3rem;
+  text-decoration: none;
+}
+.phonenumber:hover{
+  color: var(--HoverGold);
+  text-decoration: none;
+}
+
 
 .logo-text-big{
   font-size: 200px;
