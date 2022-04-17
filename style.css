@@ -7,6 +7,7 @@
   --Black:black;
   --DarkGray:#28292b;
   --DarkerGray:#212529;
+  --White: white:
 
 }
 
@@ -80,7 +81,14 @@ body{
   font-size: 3rem;
   text-decoration: none;
 }
+.miniphonenumber{
+  text-decoration: none;
+}
 .phonenumber:hover{
+  color: var(--HoverGold);
+  text-decoration: none;
+}
+.miniphonenumber:hover{
   color: var(--HoverGold);
   text-decoration: none;
 }
@@ -160,7 +168,7 @@ body{
 }
 
 .text {
-  color: white;
+  color: var(--White);
   font-size: 20px;
   position: relative;
   padding: 0 1rem;
@@ -170,7 +178,7 @@ body{
   text-align: center;
 }
 .header-text{
-  color: white;
+  color: var(--White);
   font-size: 26px;
   position: relative;
   top: 30%;
